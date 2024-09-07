@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+  border: none;
+}
+
+.back {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 36px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .header_content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .navbar_content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .nav_item {
+        color: #bababa;
+        font-size: 12px;
+        font-weight: 500;
+        transition: 0.4s;
+      }
+
+      .nav_item:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.bxl-discord-alt {
+  color: #bababa;
+  font-size: 32px;
+  transition: 0.4s;
+}
+
+.bxl-discord-alt:hover {
+  color: #fff;
+}
+
+.main_btn {
+  padding: 13px 74px;
+  border-radius: 12px;
+}
+
+.dv {
+  color: #fff;
+  font-size: 32px;
+}
+
+.hero_img {
+  max-width: 550px;
+  width: 100%;
+}
+
+.hero_section {
+  margin-top: 90px !important;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 18px 36px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+
+  .hero_content {
+    max-width: 500px;
+    .main_title {
+      font-size: 67px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: -3px 0px 7px rgba(0, 146, 255, 0.93);
+      line-height: 72px;
+    }
+    .hero_title {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .link_main {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .dw_btn {
+        background: #fff;
+        color: #000;
+        font-weight: 400;
+        font-size: 15px;
+        border: 1px solid #fff;
+      }
+
+      .ds_btn {
+        border: 1px solid #fff;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+    .available_on_sec {
+      margin-top: 20px;
+      .av_title {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .available_on_content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 3px;
+        .device_cn {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+
+          .title_dv {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .main_btn {
+    padding: 13px 44px;
+    border-radius: 12px;
+  }
+  .header {
+    padding: 12px 16px;
+    .header_content {
+      .navbar_content {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .hero_section {
+    margin-top: 90px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px 36px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .hero_content {
+      max-width: 500px;
+      .main_title {
+        font-size: 57px;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: -3px 0px 7px rgba(0, 146, 255, 0.93);
+        line-height: 62px;
+      }
+      .hero_title {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .link_main {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .dw_btn {
+          background: #fff;
+          color: #000;
+          font-weight: 400;
+          font-size: 15px;
+          border: 1px solid #fff;
+        }
+
+        .ds_btn {
+          border: 1px solid #fff;
+          color: #fff;
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+      .available_on_sec {
+        margin-top: 20px;
+        .av_title {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .available_on_content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          margin-top: 3px;
+          .device_cn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .title_dv {
+              color: #fff;
+              font-size: 15px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .hero_section {
+    margin-top: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .hero_content {
+      max-width: 500px;
+      .main_title {
+        font-size: 57px;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: -3px 0px 7px rgba(0, 146, 255, 0.93);
+        line-height: 62px;
+      }
+      .hero_title {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .link_main {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .dw_btn {
+          background: #fff;
+          color: #000;
+          font-weight: 400;
+          font-size: 15px;
+          border: 1px solid #fff;
+        }
+
+        .ds_btn {
+          border: 1px solid #fff;
+          color: #fff;
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+      .available_on_sec {
+        margin-top: 20px;
+        .av_title {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .available_on_content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          margin-top: 3px;
+          .device_cn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .title_dv {
+              color: #fff;
+              font-size: 15px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
